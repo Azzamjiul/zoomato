@@ -5,7 +5,7 @@ function Card({city, image, name, cuisines, cost, currency, rating}) {
     return (
         <div className="card">
             <div className="city">{city}</div>
-            <img src={image} alt={name} />
+            <img src={image ? image : 'https://via.placeholder.com/150'} alt={name} />
             <div>
                 <div>
                     <span className="name">{name}</span>
