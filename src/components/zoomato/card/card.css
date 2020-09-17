@@ -1,0 +1,6 @@
+.Card {
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    margin: 1.25%;
+    float: left;
+}

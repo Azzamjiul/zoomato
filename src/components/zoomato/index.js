@@ -2337,8 +2337,7 @@ const Zoomato = () => {
                 <br/> 
                 <p>Results:</p>
                 {
-                    restaurants.restaurants?.map(
-                        restaurant => 
+                    restaurants.restaurants?.map( (restaurant) => 
                         <Card 
                             city = {restaurant.restaurant.location.city}
                             image = {restaurant.restaurant.thumb} 
@@ -2347,7 +2346,8 @@ const Zoomato = () => {
                             cost = {restaurant.restaurant.price_range}
                             cuisines = {restaurant.restaurant.cuisines}
                             rating = {restaurant.restaurant.user_rating.aggregate_rating} 
-                        ></Card>)
+                        ></Card>
+                    )
                 }
             </div>
         </div>

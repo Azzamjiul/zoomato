@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './card.css'
 
 function Card({city, image, name, cuisines, cost, currency, rating}) {
     return (
-        <div>
+        <div className="Card">
             <div >{city}</div>
             <img src={image} alt={name} />
             <div>
