@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { searchRestaurants } from '../cheat-sheets/api-call/api'
 import Card from './card'
+import './style.css'
 
 const Zoomato = () => {
     const [query, setQuery] = useState('')
@@ -2331,11 +2332,6 @@ const Zoomato = () => {
             </div>
 
             <div className="results">
-                {
-                    typeof(restaurants.results_found)
-                }
-                <br/> 
-                <p>Results:</p>
                 {
                     restaurants.restaurants?.map( (restaurant) => 
                         <Card 
