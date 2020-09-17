@@ -2327,7 +2327,7 @@ const Zoomato = () => {
     return (
         <div>
             <div className="search">
-                <div className="seacrh-bar">
+                <div className="search-bar">
                     <input value={query} placeholder="Type a City" onChange={e => setQuery(e.target.value)} />
                     <button onClick={search} >Search Restaurant</button>
                 </div>
