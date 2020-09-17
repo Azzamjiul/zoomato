@@ -1,3 +1,15 @@
+.search {
+    display: block;
+    text-align: center;
+    padding: 100px;
+}
+
 .results {
+    width: 80%;
     margin: auto;
+}
+
+.row {
+    width: 100%;
+    align-items: center;
 }

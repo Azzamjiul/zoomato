@@ -2327,24 +2327,28 @@ const Zoomato = () => {
     return (
         <div>
             <div className="search">
-                <input value={query} placeholder="Type a City" onChange={e => setQuery(e.target.value)} />
-                <button onClick={search} >Search Restaurant</button>
+                <div className="seacrh-bar">
+                    <input value={query} placeholder="Type a City" onChange={e => setQuery(e.target.value)} />
+                    <button onClick={search} >Search Restaurant</button>
+                </div>
             </div>
 
             <div className="results">
-                {
-                    restaurants.restaurants?.map( (restaurant) => 
-                        <Card 
-                            city = {restaurant.restaurant.location.city}
-                            image = {restaurant.restaurant.thumb} 
-                            name = {restaurant.restaurant.name}
-                            currency = {restaurant.restaurant.currency}
-                            cost = {restaurant.restaurant.price_range}
-                            cuisines = {restaurant.restaurant.cuisines}
-                            rating = {restaurant.restaurant.user_rating.aggregate_rating} 
-                        ></Card>
-                    )
-                }
+                <div className="row">
+                    {
+                        restaurants.restaurants?.map( (restaurant) => 
+                            <Card 
+                                city = {restaurant.restaurant.location.city}
+                                image = {restaurant.restaurant.thumb} 
+                                name = {restaurant.restaurant.name}
+                                currency = {restaurant.restaurant.currency}
+                                cost = {restaurant.restaurant.price_range}
+                                cuisines = {restaurant.restaurant.cuisines}
+                                rating = {restaurant.restaurant.user_rating.aggregate_rating} 
+                            ></Card>
+                        )
+                    }
+                </div>
             </div>
         </div>
     )

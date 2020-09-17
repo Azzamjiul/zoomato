@@ -1,8 +1,8 @@
 .card {
-    width: 30%;
+    width: 48%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
-    float: left;
-    margin: 30px;
+    display: inline-block;
+    margin: 1%;
 }
 
 .card .city {
@@ -15,7 +15,7 @@
 
 .card .city:hover {
     background-color: rgba(43, 45, 66, .9);
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 .card img {
